@@ -1,0 +1,18 @@
+﻿@model PharmacyIndexViewModel
+
+<h1>List of Drugs:</h1>
+<ul>
+    @foreach (var drug in Model.Drugs)
+    {
+        <li>@drug.Name</li>
+    }
+</ul>
+
+<h1>List of Drug Types:</h1>
+
+<ul>
+    @foreach (var drugtype in Model.DrugTypes)
+    {
+        <li>@drugtype.Type</li>
+    }
+</ul>
